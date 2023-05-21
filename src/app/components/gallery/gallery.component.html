@@ -1,0 +1,43 @@
+<div
+  class="content__page">
+
+  <div
+    class="content__carrursel">
+      <div
+        [ngStyle]="{'transform':'translateX('+translateValue+'px)'}"
+        class="carrusel__carrusel--item">
+        <ng-container *ngFor="let item of items">
+          <div
+            class="carrusel__item"
+            [ngStyle]="{'background-image':'url('+ item.img +')'}">
+          </div>
+        </ng-container>
+      </div>
+
+      <button
+      (click)="setBack()"
+      class="button--left
+           button--carrusel">
+      <
+    </button>
+    <button
+      (click)="setNext()"
+      class="button--right
+            button--carrusel">
+      >
+    </button>
+  </div>
+
+  <div
+    class="content__image--grid">
+    <ng-container
+      *ngFor="let item of items">
+      <div
+        class="carrusel__item"
+        [ngStyle]="{'background-image':'url('+ item.img +')'}">
+      </div>
+    </ng-container>
+  </div>
+
+</div>
+

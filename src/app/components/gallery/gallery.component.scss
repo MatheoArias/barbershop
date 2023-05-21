@@ -1,0 +1,111 @@
+.content__page{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin: 20px 0;
+  animation: content 1s ease-in-out;
+
+  .content__carrursel{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+
+    .carrusel__carrusel--item{
+      display: flex;
+      align-items: center;
+      height: 400px;
+      transition: all 0.5s ease-in-out;
+
+      .carrusel__item{
+        max-width: 300px;
+        max-height: 450px;
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        margin: 0 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    }
+
+    .button--carrusel{
+      position: absolute;
+      top: 50%;
+      background-color: transparent;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      border: none;
+      font-size: 2.5rem;
+      line-height: 27px;
+      color: var(--color--brown);
+      transition: all 0.5s ease-in-out;
+    }
+
+    .button--carrusel:hover{
+      opacity: 40%;
+      transition: all 0.3s ease-in-out;
+      background-color: var(--color--gray--background);
+
+    }
+
+    .button--left{
+      left: 15px;
+    }
+    .button--right{
+      right: 15px;
+    }
+  }
+
+  .content__image--grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5px;
+    height: 100%;
+    width: 95%;
+    border-top: 10px solid var(--color--brown);
+    padding-top: 10px;
+    margin: 0 auto;
+
+    .carrusel__item{
+      width: 100%;
+      height: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+}
+
+@keyframes content {
+  0%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+
+}
+
+@media(min-width:500px){
+  .content__page{
+    .content__image--grid{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap:5px;
+      height: 100%;
+      width: 100%;
+
+      .carrusel__item{
+        height: 250px;
+      }
+    }
+  }
+}

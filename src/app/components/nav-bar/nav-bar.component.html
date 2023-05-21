@@ -1,0 +1,58 @@
+<nav>
+  <button
+    [class.activate]="stateNave"
+    (click)="onChangeStateNav()">
+  </button>
+
+  <div
+    class="content__logo">
+  </div>
+</nav>
+
+<ul
+  [class.activate]="stateNave">
+  <li
+    (click)="OnClick()"
+    routerLinkActive="activate__link">
+    <a
+      routerLinkActive="activate__link"
+      [routerLink]="['/barberia']">
+      Inicio
+    </a>
+  </li>
+
+  <li
+    (click)="OnClick()"
+    routerLinkActive="activate__link">
+    <a
+      routerLinkActive="activate__link"
+      [routerLink]="['/servicios']">
+      Servicios
+    </a>
+  </li>
+
+  <li
+    (click)="OnClick()"
+    routerLinkActive="activate__link">
+    <a
+      routerLinkActive="activate__link"
+      [routerLink]="['./galeria']">
+      Galeria
+    </a>
+  </li>
+
+  <li
+    (click)="OnClick()"
+    routerLinkActive="activate__link">
+    <a
+      routerLinkActive="activate__link"
+      [routerLink]="['./contacto']">
+      Contacto
+    </a>
+  </li>
+</ul>
+
+<div
+  class="content__background"
+  [class.activate]="stateNave">
+</div>

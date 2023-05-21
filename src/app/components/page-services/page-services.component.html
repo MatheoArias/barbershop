@@ -1,0 +1,123 @@
+<div
+  (scroll)="onScroll()"
+  class="content__page">
+
+  <div
+    [class.activate]="stepOne"
+    class="content__services">
+    <p
+      class="text">
+      CORTE DE CABELLO
+    </p>
+    <p
+      class="text">
+      +
+    </p>
+    <p
+      class="text">
+      MASCARILLA
+    </p>
+    <p
+      class="text">
+      +
+    </p>
+    <p
+    class="text">
+      CEJAS
+    </p>
+    <p
+      class="text--number">
+      {{20000 | currency}}
+    </p>
+  </div>
+
+  <div
+    [class.activate]="stepTwo"
+    class="content__services">
+    <p
+      class="text">
+      CORTE DE CABELLO
+    </p>
+    <p
+      class="text">
+      +
+    </p>
+    <p
+    class="text">
+      CEJAS
+    </p>
+    <p
+      class="text--number">
+      {{18000 | currency}}
+    </p>
+  </div>
+
+  <div
+    [class.activate]="stepThree"
+    class="content__services">
+    <p
+      class="text">
+      CORTE DE CABELLO
+    </p>
+    <p
+      class="text">
+      +
+    </p>
+    <p
+    class="text">
+      BARBA
+    </p>
+    <p
+      class="text--number">
+      {{24000 | currency}}
+    </p>
+  </div>
+
+  <div
+    [class.activate]="stepFour"
+    class="content__services">
+    <p
+      class="text">
+      CORTE DE CABELLO
+    </p>
+    <p
+    class="text--sub">
+      Servicio para niños
+    </p>
+    <p
+      class="text--number">
+      {{24000 | currency}}
+    </p>
+  </div>
+
+  <div
+
+    [class.activate]="stepFive"
+    class="content__services">
+    <p
+      class="text">
+      CORTE DE CABELLO
+    </p>
+    <p
+      class="text--number">
+      {{18000 | currency}}
+    </p>
+  </div>
+
+  <div
+    [class.activate]="stepFive"
+    class="content__services">
+    <p
+      class="text">
+      SERVICIO V.I.P.
+    </p>
+    <p
+    class="text--sub">
+      Corte de cabello - Barba- Cejas - Mascarilla + Exfoliación - Vaporización -Hidratación
+    </p>
+    <p
+      class="text--number">
+      {{24000 | currency}}
+    </p>
+  </div>
+</div>
