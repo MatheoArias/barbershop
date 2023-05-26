@@ -63,6 +63,7 @@ table {
 }
 
 html {
+  font-family: 'Quicksand', sans-serif;
   font-size: 62.5%;
   background-color: var(--colot--black);
 }
@@ -86,3 +87,8 @@ app-footer{
   width: 100%;
 }
 
+.image{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
