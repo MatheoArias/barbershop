@@ -5,14 +5,28 @@
   width: 100%;
   background-color: var(--color--gray--background);
   padding: 15px 0;
-  animation: content 1s ease-in-out;
 
   .page__image{
     width: 250px;
     height: 350px;
     margin: 0 auto;
     background-image: url('../../../assets/images/Jeran_Portada.png');
+    transform: translateX(200px);
+    opacity: 0;
+    animation: image 0.8s ease forwards;
   }
+
+  @keyframes image {
+    0%{
+      opacity: 0;
+      transform: translateX(500px)
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+
   .paragraph{
     display: flex;
     flex-direction: column;
@@ -21,6 +35,8 @@
     width: 100%;
     max-width: 90%;
     margin :20px auto;
+    animation: paragraph 0.8s ease forwards;
+
     .paragraph__text{
       font-size: 1.35rem;
       font-weight: 400;
@@ -38,6 +54,18 @@
       color: var(--colot--black);
     }
   }
+
+  @keyframes paragraph {
+    0%{
+      opacity: 0;
+      transform: translateY(500px)
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+
 }
 
 @media(min-width:700px) {

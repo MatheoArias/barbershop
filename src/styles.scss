@@ -48,6 +48,7 @@ table {
   --color--brown:#977656;
   --color--gray--background: #EBEBEB;
   --color--gray: #2b353b;
+  --color-white:#ffffff;
 }
 
 /*the tittle font insertion*/
@@ -91,4 +92,10 @@ app-footer{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+a,
+button{
+  text-decoration: none;
+  cursor: pointer;
 }
